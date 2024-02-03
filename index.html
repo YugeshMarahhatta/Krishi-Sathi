@@ -20,12 +20,27 @@
             padding: 1em;
         }
 
+        .top-header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        .top-header img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
         section {
             padding: 20px;
         }
 
         h1 {
             color: #28a745;
+            font-size: 2em;
+            margin-bottom: 10px;
         }
 
         p {
@@ -40,6 +55,21 @@
 
         .feature {
             text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
         }
 
         footer {
@@ -51,34 +81,64 @@
             bottom: 0;
             width: 100%;
         }
+        .our{
+            text-align: center;
+            padding-left: 1em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section, .features, footer {
+            animation: fadeIn 1s ease-out;
+        }
     </style>
 </head>
 <body>
 
+
     <header>
-        <h1>Krishi Sathi</h1>
-        <p>Delecious Food, Healthy Life</p>
+        <img src="logobnw.png" alt="Krishi Sathi Logo" width="120">
+        <h2>Krishi Sathi</h2>
+        <p>"Delicious Food, Healthy Life"</p>
+        <h1>Connecting Farmers with Customers</h1>
     </header>
 
     <section>
-        <h2>About Us</h2>
-        <p>We've developed a revolutionary mobile application, Krishi Sathi, that streamlines the process from farm to customers. Our platform eliminates middlemen, ensuring quality and safe products, with fast delivery and free consultations from experts.</p>
+        <h2 class="our">About Us</h2>
+        <p class="our"> We've developed a revolutionary mobile application, Krishi Sathi, that streamlines the process from farm to customers. Our platform eliminates middlemen, ensuring quality and safe products, with fast delivery and free consultations from experts.</p>
     </section>
 
+    <div class="our">
+        <h2>Our Feature</h2>
+    </div>
     <section class="features">
+
         <div class="feature">
+            <img src="farmers.webp" alt="Farmers" width="150">
             <h3>Direct Connection</h3>
             <p>Connect directly with farmers, reducing unnecessary intermediaries.</p>
         </div>
         <div class="feature">
+            <img src="quality.png" alt="Quality Assurance" width="150">
             <h3>Quality Assurance</h3>
             <p>We assure the quality and safety of products for our customers.</p>
         </div>
         <div class="feature">
+            <img src="delivery.png" alt="Fast Delivery" width="150">
             <h3>Fast Delivery</h3>
             <p>Enjoy swift and reliable delivery services for your fresh produce.</p>
         </div>
         <div class="feature">
+            <img src="freeconsultants.jpeg" alt="Free Consultations" width="150">
             <h3>Free Consultations</h3>
             <p>Access free consultations with agricultural experts and consultants.</p>
         </div>
